@@ -1,0 +1,88 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding:20px 10px;
+}
+
+.logoBox {
+  margin-left: 10px;
+}
+
+.logoBox img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.burger {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 44px;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #33626c;
+  border-radius: 20px 0 20px 0;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  max-width: 420px;
+  height: 100vh;
+  background: #9db1ac;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.mobileMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobileMenu {
+    width: 100vw;
+  }
+
+  .mobileMenu a {
+    font-size: 1.5rem;
+  }
+}

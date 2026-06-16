@@ -1,0 +1,123 @@
+.heroOphold {
+  height: 100vh;
+  background-image:
+    linear-gradient(#818181d8, #818181a3),
+    url("/glamping/heros/ophold.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.logoOphold{
+    
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+.ophold {
+    height: 70vh;
+     margin-top: -50px;
+     
+  background-color: #33626c;
+  border-radius: 60px 0 60px 0;
+  border: none;
+  color: white;
+  padding: 40px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 70px;
+  padding: 80px 20px 40px;
+ 
+}
+
+.card {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+    background: #818181d8;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.priceBox {
+  width: 78%;
+  margin: 0 auto;
+  background: #d4c19b;
+  color: white;
+  padding: 22px 18px;
+  border-radius: 45px 0 45px 0;
+  position: relative;
+  z-index: 2;
+  transform: translateY(48px);
+}
+
+.priceBox h3 {
+  font-family: "Zen Loop";
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+
+.priceBox p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.infoBtn {
+  display: inline-block;
+  margin-top: -24px;
+  padding: 18px 34px;
+  min-width: 170px;
+  background: #9db1ac;
+  color: white;
+  border: none;
+  border-radius: 24px 0 24px 0;
+  font-family: "Zen Loop";
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+
+.infoBtn:hover {
+  background: #7e9a96;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 90px 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
