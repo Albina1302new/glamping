@@ -12,7 +12,10 @@ function EnkelvisningOphold() {
 
   return (
     <section className={styles.singleStay}>
-      <img src={stay.image} alt={stay.title} />
+      <div
+        className={styles.heroImage}
+        style={{ backgroundImage: `url(${stay.image})` }}
+      />
 
       <div className={styles.content}>
         <h1>{stay.title}</h1>
@@ -21,10 +24,10 @@ function EnkelvisningOphold() {
 
         <div className={styles.info}>
           <p>{stay.numberOfPersons} personer</p>
-          <p>Fra {stay.price},-</p>
+          <p className={styles.price}>Fra {stay.price},-</p>
         </div>
 
-        <Link to="/booking" className={styles.bookBtn}>
+        <Link to="/contact" className={styles.bookBtn}>
           Book nu
         </Link>
       </div>

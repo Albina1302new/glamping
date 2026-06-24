@@ -1,31 +1,43 @@
 .singleStay {
-  background: #d9ded8;
   min-height: 100vh;
+  background: #d9ded8;
 }
 
-.singleStay img {
-  width: 100%;
+.heroImage {
   height: 100vh;
-  object-fit: cover;
-  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.heroImage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#818181d8, #818181a3);
 }
 
 .content {
   background: #33626c;
   color: white;
 
-  margin-top: -40px;
+  margin-top: -50px;
   position: relative;
   z-index: 2;
 
   border-radius: 60px 0 0 0;
-
   padding: 60px 25px 80px;
   text-align: center;
 }
 
 .content h1 {
-  font-family: "Zen Loop", cursive;
+  font-family: "Zen Loop";
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 300;
   margin-bottom: 30px;
@@ -37,40 +49,30 @@
   line-height: 1.6;
 }
 
-.includes {
-  margin: 50px 0;
-}
-
-.includes p {
-  margin-bottom: 8px;
+.info {
+  margin: 40px 0;
 }
 
 .price {
-  font-family: "Zen Loop", cursive;
+  font-family: "Zen Loop";
   font-size: 2.5rem;
-  margin-bottom: 40px;
 }
 
 .bookBtn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
   width: 250px;
   height: 90px;
 
-  margin: 0 auto;
-
   background: #9db1ac;
   color: white;
   text-decoration: none;
 
   border-radius: 60px 0 60px 0;
-
-  font-family: "Zen Loop", cursive;
+  font-family: "Zen Loop";
   font-size: 2.2rem;
-
-  transition: 0.3s;
 }
 
 .bookBtn:hover {
@@ -78,15 +80,7 @@
 }
 
 @media (min-width: 1024px) {
-  .singleStay img {
-    height: 75vh;
-  }
-
   .content {
     padding: 80px;
-  }
-
-  .content p {
-    font-size: 1.1rem;
   }
 }

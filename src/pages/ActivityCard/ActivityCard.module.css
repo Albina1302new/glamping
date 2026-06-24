@@ -1,0 +1,87 @@
+.card {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  background: #818181d8;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.priceBox {
+  width: 78%;
+  margin: 0 auto;
+  background: #d4c19b;
+  color: white;
+  padding: 22px 18px;
+  border-radius: 45px 0 45px 0;
+  position: relative;
+  z-index: 2;
+  transform: translateY(48px);
+}
+
+.priceBox h3 {
+  font-family: "Zen Loop";
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+}
+
+.infoBox {
+  background: #33626c;
+  color: white;
+  padding: 24px 34px 30px;
+  border-radius: 0 0 45px 0;
+  position: relative;
+  text-align: left;
+}
+
+.heartBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background: #6f969d;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.time {
+  font-family: "Zen Loop";
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+.readBtn {
+  width: 100%;
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 24px 0 24px 0;
+  font-family: "Zen Loop";
+  font-size: 2rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.description {
+  margin-top: 22px;
+  font-size: 1rem;
+  line-height: 1.6;
+}

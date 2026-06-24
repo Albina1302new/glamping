@@ -1,0 +1,143 @@
+.heroKontakt {
+  height: 100vh;
+  background-image:
+    linear-gradient(#818181d8, #818181a3),
+    url("/public/heros/kontakt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroKontakt h1 {
+  color: white;
+}
+
+.kontakt {
+  min-height: 75vh;
+  margin-top: -50px;
+
+  background-color: #33626c;
+  border-radius: 60px 0 0 0;
+  color: white;
+  padding: 50px 24px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt h2 {
+  font-family: "Zen Loop";
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.kontakt p {
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+  max-width: 520px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+.submitBtn {
+  display: inline-block;
+  margin: 10px auto 0;
+  padding: 18px 34px;
+  min-width: 170px;
+  background: #9db1ac;
+  color: white;
+  border: none;
+  border-radius: 24px 0 24px 0;
+  font-family: "Zen Loop";
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #7e9a96;
+}
+
+.error {
+  color: #ffd3d3;
+  font-size: 0.95rem;
+}
+
+.thankYou {
+  min-height: 100vh;
+  background: #33626c;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding: 30px;
+}
+
+.thankYou p {
+  font-family: "Zen Loop";
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.backBtn {
+  padding: 18px 34px;
+  background: #9db1ac;
+  color: white;
+  border: none;
+  border-radius: 24px 0 24px 0;
+  font-family: "Zen Loop";
+  font-size: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .kontakt {
+    padding: 80px;
+  }
+
+  .form {
+    max-width: 700px;
+  }
+}

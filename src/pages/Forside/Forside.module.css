@@ -79,27 +79,33 @@
   padding: 40px 24px;
   text-align: center;
 }
-.gBtn{
-    background: #829b97;
-    
+.gBtn {
+  background: #829b97;
+
   min-width: 180px;
   width: clamp(190px, 50vw, 292px);
-
   min-height: 97px;
 
   border: none;
   border-radius: 60px 0 60px 0;
-  font-family: "Zen Loop"  ;
-  color:white;
-  
+
+  font-family: "Zen Loop";
+  color: white;
+  text-decoration: none;
+
   letter-spacing: 2px;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  
   font-weight: 300;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .gBtn:hover {
   background: rgba(115, 115, 115, 0.33);
 }

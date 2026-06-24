@@ -1,0 +1,112 @@
+.heroActiviteter {
+  height: 100vh;
+  background-image:
+    linear-gradient(#818181d8, #818181a3),
+    url("/heros/aktiviteter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroActiviteter h1 {
+  color: white;
+}
+
+.activiteter {
+  height: 70vh;
+  margin-top: -50px;
+  background-color: #33626c;
+  border-radius: 60px 0 60px 0;
+  color: white;
+  padding: 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.activiteter h3 {
+  font-family: "Zen Loop";
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.activiteter p {
+  max-width: 550px;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 70px;
+  padding: 80px 20px 40px;
+}
+
+
+
+.priceBox {
+  width: 78%;
+  margin: 0 auto;
+  background: #d4c19b;
+  color: white;
+  padding: 22px 18px;
+  border-radius: 45px 0 45px 0;
+  position: relative;
+  z-index: 2;
+  transform: translateY(48px);
+}
+
+
+.heartBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  background: #6c9095;
+  color: white;
+  cursor: pointer;
+}
+
+.time {
+  font-family: "Zen Loop";
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.readBtn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 40px 0 40px 0;
+  padding: 12px;
+  font-family: "Zen Loop";
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

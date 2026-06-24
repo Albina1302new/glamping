@@ -25,16 +25,16 @@ function Header() {
             </button>
 
             <Link to="/stays" onClick={() => setOpen(false)}>
-              Ophold
-            </Link>
-            <Link to="/activities" onClick={() => setOpen(false)}>
-              Aktiviteter
+              <h3>Ophold</h3>
             </Link>
             <Link to="/contact" onClick={() => setOpen(false)}>
-              Kontakt
+              <h3>Kontakt</h3>
             </Link>
-            <Link to="/wishlist" onClick={() => setOpen(false)}>
-              Min liste
+            <Link to="/activities" onClick={() => setOpen(false)}>
+             <h3> Aktiviteter</h3>
+            </Link>
+            <Link to="/min-liste" onClick={() => setOpen(false)}>
+             <h3> Min liste</h3>
             </Link>
             
           </nav>
